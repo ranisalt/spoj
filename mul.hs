@@ -7,7 +7,7 @@ mul [x, y] = xInt * yInt
 mainLoop 0 = exitWith ExitSuccess
 mainLoop x = do
 	values <- getLine
-	print $ mul (take 2 $ words values)
+	print $ mul (words values)
 	mainLoop (x - 1)
 
 main = do
